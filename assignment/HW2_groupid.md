@@ -21,10 +21,10 @@ summary(cats$Sex)
 mean(survey$Height,na.rm = TRUE)
 ```
 
-4.) Q :
-    A : 
+4.) Q : หาว่านักเรียนที่มีส่วนสูงมากที่สุดใช้มือข้างไหน
+    A : จากการสำรวจพบว่า ใช้มือข้างซ้าย
 ```{R}
-Code here
+survey$W.Hnd[which.max(x$Height)]
 ```
 
 5.) Q :
