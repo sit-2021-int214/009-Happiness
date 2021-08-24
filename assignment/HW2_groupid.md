@@ -39,7 +39,7 @@ mean(survey$Age[survey$W.Hnd=="Left"], na.rm = TRUE)
 mean(cats$Bwt[cats$Sex=="M"]) - mean(mean(cats$Bwt[cats$Sex=="F"]))
 ```
 
-### Team: xxxxxxx
+### Team: อยากกรีดร้องงงง!!!!
 
 1.  StudentID: 63130500023 ชิษณุชา สมบูรณ์วรรณะ
 2.  StudentID: 63130500049 ธนพัฒน์ ไตรรัตน์พนาสันต์
