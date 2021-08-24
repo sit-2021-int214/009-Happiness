@@ -39,6 +39,12 @@ mean(survey$Age[survey$W.Hnd=="Left"], na.rm = TRUE)
 mean(cats$Bwt[cats$Sex=="M"]) - mean(mean(cats$Bwt[cats$Sex=="F"]))
 ```
 
+7.) Q : หาอายุของนักเรียนชายที่น้อยที่สุดที่ไม่สูบบุหรี่
+    A : จากการสำรวจพบว่า นักเรียนชายที่อายุน้อยที่สุดที่ไม่สูบบุหรี่มีอายุเท่ากับ 16.75 ปี
+```{R}
+min(survey$Age[survey$Smoke=="Never" & survey$Sex=="Male"],na.rm = TRUE)
+```
+
 ### Team: อยากกรีดร้องงงง!!!!
 
 1.  StudentID: 63130500023 ชิษณุชา สมบูรณ์วรรณะ
