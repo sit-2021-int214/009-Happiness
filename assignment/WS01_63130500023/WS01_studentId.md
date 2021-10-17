@@ -36,39 +36,51 @@ assertive => เอาไว้เช็ค type
 install.packages("")
 ```
 # Library
+```
 library(stringr) <br>
 library(dplyr)  <br>
 library(DescTools)  <br>
 library(assertive) 
 
 ```
-
 ## Step 2: Check data cleaning 
 
-//Explain here
-
+##เช็คว่ามีค่า NA หรือไม่ ใช้คำสั่ง  
 ```
-#Code here
+is.na
 ```
-
-Result:
-
+##เช็ค type ของแต่ละ column
 ```
-#Copy Result from console to here
+paralympic_teams$Team %>% is.character()
+paralympic_teams$Country %>% is.character()
+paralympic_teams$CountryCode %>% is.character()
+paralympic_teams$Sport %>% is.character()
+paralympic_teams$Sport.code %>% is.character()
+paralympic_teams$Event %>% is.character()
 ```
+## Step 3 : Define questions
+## Check number of data set by list value each column
+```
+paralympic_teams$Team %>% factor() %>% table()
+paralympic_teams$Country %>% factor() %>% table()
+paralympic_teams$CountryCode %>% factor() %>% table()
+paralympic_teams$Sport %>% factor() %>% table()
+paralympic_teams$Sport.code %>% factor() %>% table()
+paralympic_teams$Event %>% factor() %>% table()
+```
+## what is country that height content of Men and Woman and Men and How must differ?
+```
+modeOfParalympic <- paralympic_teams$Country %>% Mode()
 
-//Explain
+Men <- paralympic_teams %>%  select(Country , Event) %>% filter(Event == "Men" ) %>% filter(Country == modeOfParalympic)
 
-- list 1
-- list 2
+woman <- paralympic_teams %>% select(Country , Event)%>% filter(Event == "Women" ) %>% filter(Country == modeOfParalympic)
 
-## Step 2: xxxxxx
+count(Men) - count(woman)
+```
+## What is name sport to most ?
+```
+paralympic_teams$Sport %>% Mode() %>% table()
+```
+#THANK YOU
 
-### 2.1. xxxxx
-//Content
-
-### 2.2. xxxx
-//Content
-
-## Summary
-//Content
