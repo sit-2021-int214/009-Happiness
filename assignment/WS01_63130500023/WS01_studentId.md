@@ -22,24 +22,24 @@ Can add more question ....
 
 ## Step 1 : Install and loading Library and dataset
 
+# Dataset
 ```
-#Dataset
 paralympic_teams <- read.csv("https://githubraw.com/kim25450/csv/main/paralympic-teams.csv")
 ```
 
 # Install package 
-stringr <br>
-dplyr <br>
-DescTools <br>
-assertive 
+stringr => เอาไว้ใช้ในการ เช่นการลบ <br>
+dplyr => เอาไว้ใช้เขียน statement ได้ง่ายชึ้น<br>
+DescTools => เอาไว้หา Mode<br>
+assertive => เอาไว้เช็ค type 
 ```
 install.package()
 ```
 # Library
-library(stringr) # เอาไว้ใช้ในการ เช่นการลบ
-library(dplyr) # เอาไว้ใช้เขียน statement ได้ง่ายชึ้น
-library(DescTools) # เอาไว้หา Mode
-library(assertive) # เอาไว้เช็ค type 
+library(stringr) 
+library(dplyr)  
+library(DescTools)  
+library(assertive) 
 
 ```
 
