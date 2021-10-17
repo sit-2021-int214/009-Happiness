@@ -33,7 +33,7 @@ dplyr => เอาไว้ใช้เขียน statement ได้ง่า
 DescTools => เอาไว้หา Mode<br>
 assertive => เอาไว้เช็ค type 
 ```
-install.package("")
+install.packages("")
 ```
 # Library
 library(stringr) 
