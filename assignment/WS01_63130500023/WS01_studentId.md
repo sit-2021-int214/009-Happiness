@@ -1,8 +1,8 @@
 # Workshop 01 EDA: SAT Scores dataset
 
-Dataset from [SAT_original.csv](https://raw.githubusercontent.com/safesit23/INT214-Statistics/main/datasets/SAT_original.csv)
+Dataset from https://github.com/FoldingAtHome/coronavirus.git
 
-**Created by Name-Surname (ID: xxxxxxxxxx)**
+**Created by Chisanucha Somboonwanna (ID: 63130500023)**
 
 ### My Step
 1. Define a question
