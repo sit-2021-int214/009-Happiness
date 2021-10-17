@@ -1,13 +1,13 @@
 # Workshop 01 EDA: SAT Scores dataset
 
-Dataset from https://github.com/FoldingAtHome/coronavirus.git
+Data set is paralympic_teams ("https://githubraw.com/kim25450/csv/main/paralympic-teams.csv")
 
 **Created by Chisanucha Somboonwanna (ID: 63130500023)**
 
 ### My Step
-1. Define a question
-2. Loading Library and dataset
-3. xxxxxxx
+1. Install and loading Library
+2. Check data cleaning 
+3. Define a question
 
 ## Define a question
 
@@ -20,17 +20,20 @@ Dataset from https://github.com/FoldingAtHome/coronavirus.git
 
 Can add more question ....
 
-## Step 0: Loading library and dataset
+## Step 1 : Install and loading Library
 
 ```
+# Install package 
+paralympic_teams <- read.csv("https://githubraw.com/kim25450/csv/main/paralympic-teams.csv")
 # Library
-library(name)
+library(stringr) # เอาไว้ใช้ในการ เช่นการลบ
+library(dplyr) # เอาไว้ใช้เขียน statment ได้ง่ายชึ้น
+library(DescTools) # เอาไว้หา Mode
+library(assertive) # เอาไว้เช็ค type 
 
-# Dataset
-dataset <- read_csv("")
 ```
 
-## Step 1: xxxxxx
+## Step 2: Check data cleaning 
 
 //Explain here
 
