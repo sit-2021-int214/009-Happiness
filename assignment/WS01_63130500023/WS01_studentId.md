@@ -28,9 +28,9 @@ paralympic_teams <- read.csv("https://githubraw.com/kim25450/csv/main/paralympic
 ```
 
 # Install package 
-stringr
-dplyr
-DescTools
+stringr <br>
+dplyr <br>
+DescTools <br>
 assertive 
 ```
 install.package()
