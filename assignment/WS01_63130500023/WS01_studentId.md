@@ -36,9 +36,9 @@ assertive => เอาไว้เช็ค type
 install.packages("")
 ```
 # Library
-library(stringr) 
-library(dplyr)  
-library(DescTools)  
+library(stringr) <br>
+library(dplyr)  <br>
+library(DescTools)  <br>
 library(assertive) 
 
 ```
