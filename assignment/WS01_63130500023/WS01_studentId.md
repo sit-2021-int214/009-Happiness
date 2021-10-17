@@ -5,7 +5,7 @@ Data set is paralympic_teams ("https://githubraw.com/kim25450/csv/main/paralympi
 **Created by Chisanucha Somboonwanna (ID: 63130500023)**
 
 ### My Step
-1. Install and loading Library
+1. Install and loading Library and dataset
 2. Check data cleaning 
 3. Define a question
 
@@ -20,14 +20,24 @@ Data set is paralympic_teams ("https://githubraw.com/kim25450/csv/main/paralympi
 
 Can add more question ....
 
-## Step 1 : Install and loading Library
+## Step 1 : Install and loading Library and dataset
 
 ```
-# Install package 
+#Dataset
 paralympic_teams <- read.csv("https://githubraw.com/kim25450/csv/main/paralympic-teams.csv")
+```
+
+# Install package 
+stringr
+dplyr
+DescTools
+assertive 
+```
+install.package()
+```
 # Library
 library(stringr) # เอาไว้ใช้ในการ เช่นการลบ
-library(dplyr) # เอาไว้ใช้เขียน statment ได้ง่ายชึ้น
+library(dplyr) # เอาไว้ใช้เขียน statement ได้ง่ายชึ้น
 library(DescTools) # เอาไว้หา Mode
 library(assertive) # เอาไว้เช็ค type 
 
