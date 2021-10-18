@@ -11,21 +11,64 @@ Original Datasets from: [Happiness.csv](https://www.kaggle.com/unsdsn/world-happ
 ### Steps
 
 1. Define a question
-2. Observe...
+2. Loading dataset from [Happiness_original.csv](https://www.kaggle.com/unsdsn/world-happiness?select=2019.csv) and assign variable named `happiness`
+3. Observe the data
+   - How many observation?
+   - List variable name
+4. Data Cleaning and Data Transformation
+   - check duplicate data
+   - check NA value
+5. Exploratory Data Analysis
 
 ### Define a question
+1.
+2.
+3.
+4.
+5.
 
 ### Library
 ```{R}
+library(dplyr)
+library(readr)
 
 ```
 
 ### Explore
 ```{R}
+happiness <- read_csv("https://raw.githubusercontent.com/sit-2021-int214/009-Happiness/main/Happiness-2019.csv")
+View(happiness)
+```
 
+### Observe
+```{R}
+happiness <- as_tibble(happiness)
+glimpse(happiness)
 ```
 
 ### Cleaning
+```{R}
+
+```
+
+### Exploratory Data Analysis
+1.
+```{R}
+
+```
+2.
+```{R}
+
+```
+3.
+```{R}
+
+```
+4.
+```{R}
+
+```
+5.
 ```{R}
 
 ```
@@ -45,8 +88,7 @@ Original Datasets from: [Happiness.csv](https://www.kaggle.com/unsdsn/world-happ
 ### Important Files in Repository
 
 - [code_eda.R](./code_eda.R) : Exploratory Data Analysis
-- [products_original.csv](./products_original.csv): Original Dataset
-- [products_clean.csv](./products_original.csv): Clean Dataset
+- [Happiness_original.csv](https://www.kaggle.com/unsdsn/world-happiness?select=2019.csv): Original Dataset
 
 ### References
 
