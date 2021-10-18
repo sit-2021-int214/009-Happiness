@@ -13,6 +13,23 @@ Original Datasets from: [Happiness.csv](https://www.kaggle.com/unsdsn/world-happ
 1. Define a question
 2. Observe...
 
+### Define a question
+
+### Library
+```{R}
+
+```
+
+### Explore
+```{R}
+
+```
+
+### Cleaning
+```{R}
+
+```
+
 ### Tools
 
 - R Language
