@@ -14,9 +14,10 @@ Original Datasets from: [Happiness.csv](https://www.kaggle.com/unsdsn/world-happ
 3. Observe the data
    - How many observation?
    - List variable name
-4. Data Cleaning and Data Transformation
-   - check duplicate data
-   - check NA value
+4. Data Cleaning
+   - checking the types of values
+   - checking duplicate data
+   - checking NA value
 5. Exploratory Data Analysis
 
 ### Define a question
@@ -30,7 +31,6 @@ Original Datasets from: [Happiness.csv](https://www.kaggle.com/unsdsn/world-happ
 ```{R}
 library(dplyr)
 library(readr)
-
 ```
 
 ### Explore
@@ -45,7 +45,7 @@ happiness <- as_tibble(happiness)
 glimpse(happiness)
 ```
 
-### Cleaning
+### Data Cleaning
 ```{R}
 
 ```
@@ -86,7 +86,7 @@ glimpse(happiness)
 
 ### Important Files in Repository
 
-- [code_eda.R](./code_eda.R) : Exploratory Data Analysis
+- [Happiness_Analysis](./Happiness_Analysis.R) : Exploratory Data Analysis
 - [Happiness_original.csv](https://www.kaggle.com/unsdsn/world-happiness?select=2019.csv): Original Dataset
 
 ### References
