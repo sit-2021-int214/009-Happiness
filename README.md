@@ -43,6 +43,7 @@ View(happiness)
 ```{R}
 happiness <- as_tibble(happiness)
 glimpse(happiness)
+View(happiness)
 ```
 
 ### Data Cleaning
@@ -52,15 +53,25 @@ glimpse(happiness)
 happiness %>% filter(duplicated(happiness)) 
 happiness %>% count(duplicated(happiness))
 
-happiness %>% count(is.na(happiness$`Overall rank`))
-happiness %>% count(is.na(happiness$`Country or region`))
-happiness %>% count(is.na(happiness$Score))
-happiness %>% count(is.na(happiness$`GDP per capita`))
-happiness %>% count(is.na(happiness$`Social support`))
-happiness %>% count(is.na(happiness$`Healthy life expectancy`))
-happiness %>% count(is.na(happiness$`Freedom to make life choices`))
-happiness %>% count(is.na(happiness$Generosity))
-happiness %>% count(is.na(happiness$Generosity))
+happiness <- happiness %>% rename(Rank = `Overall rank`)
+happiness <- happiness %>% rename(Country = `Country or region`)
+happiness <- happiness %>% rename(GDP = `GDP per capita`)
+happiness <- happiness %>% rename(SocialSupport = `Social support`)
+happiness <- happiness %>% rename(Healthy = `Healthy life expectancy`)
+happiness <- happiness %>% rename(Freedom = `Freedom to make life choices`)
+happiness <- happiness %>% rename(TrustGov = `Perceptions of corruption`)
+
+happiness %>% count(is.na(Rank))
+happiness %>% count(is.na(Country))
+happiness %>% count(is.na(Score))
+happiness %>% count(is.na(GDP))
+happiness %>% count(is.na(SocialSupport))
+happiness %>% count(is.na(Healthy))
+happiness %>% count(is.na(Freedom))
+happiness %>% count(is.na(Generosity))
+happiness %>% count(is.na(TrustGov))
+
+write_csv(happiness,file = "./happiness_clean.csv")
 ```
 
 ### Exploratory Data Analysis
