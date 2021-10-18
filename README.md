@@ -4,12 +4,9 @@ Original Datasets from: [Happiness.csv](https://www.kaggle.com/unsdsn/world-happ
 
 ### About's Products Datasets
 
-This dataset is about's sample uniqlo product that sell in 2021. It includes productID, name of products, type of products, price of products, and number of sold.
-
 ## Overview
-
-// Write Statement here
-E.g. กลุ่มของเราเลือกชุดข้อมูลนี้เพราะต้องการศึกษา.....
+1. อยากทราบปัจจัยที่ส่งผลต่อความสุขของคนในประเทศ
+2. อยากทราบประเทศที่มีความสุขมากที่สุด
 
 ### Steps
 
