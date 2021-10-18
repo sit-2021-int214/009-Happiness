@@ -22,7 +22,7 @@ Original Datasets from: [Happiness.csv](https://www.kaggle.com/unsdsn/world-happ
 
 ### Define a question
 1. อยากทราบว่าประเทศไหนได้คะแนนสูงสุดในแต่ละด้านของข้อมูล และได้เท่าไหร่?
-2. อยากทราบว่ามีกี่ประเทศที่มีคะแนนรวมสูงกว่าค่าเฉลี่ย?
+2. อยากทราบว่ามีกี่ประเทศที่มีคะแนนรวมสูงกว่าค่าเฉลี่ย ประเทศอะไรบ้าง?
 3. อยากทราบว่าประเทศที่มีความสุขมากที่สุดและประเทศที่มีความสุขน้อยที่สุด มีปัจจัยที่แตกต่างกันอย่างไร?
 4. อยากทราบว่าคะแนน Perceptions of corruption มีผลต่อความสุขของคนในประเทศขนาดไหน?
 5. อยากทราบว่ารายได้มีผลต่อความสุขจริงหรือไม่?
@@ -66,23 +66,35 @@ happiness %>% count(is.na(happiness$Generosity))
 ### Exploratory Data Analysis
 1. อยากทราบว่าประเทศไหนได้คะแนนสูงสุดในแต่ละด้านของข้อมูล และได้เท่าไหร่?
 ```{R}
-
+happiness %>% dplyr::select(Country, GDP) %>% filter(GDP == max(GDP))
+happiness %>% dplyr::select(Country, SocialSupport) %>% filter(SocialSupport == max(SocialSupport))
+happiness %>% dplyr::select(Country, Healthy) %>% filter(Healthy == max(Healthy))
+happiness %>% dplyr::select(Country, Freedom) %>% filter(Freedom == max(Freedom))
+happiness %>% dplyr::select(Country, Generosity) %>% filter(Generosity == max(Generosity))
+happiness %>% dplyr::select(Country, TrustGov) %>% filter(TrustGov == max(TrustGov))
 ```
-2. อยากทราบว่ามีกี่ประเทศที่มีคะแนนรวมสูงกว่าค่าเฉลี่ย?
+#2. อยากทราบว่ามีกี่ประเทศที่มีคะแนนรวมสูงกว่าค่าเฉลี่ย ประเทศอะไรบ้าง?
 ```{R}
+num <- happiness %>% count(Score > mean(Score))
+View(num)
 
+list <- happiness %>% filter(Score > mean(Score))
+View(list)
 ```
 3. อยากทราบว่าประเทศที่มีความสุขมากที่สุดและประเทศที่มีความสุขน้อยที่สุด มีปัจจัยที่แตกต่างกันอย่างไร?
 ```{R}
-
+minVSmax <- happiness %>% filter(Score == max(happiness$Score) | Score == min(happiness$Score))
+View(minVSmax)
 ```
 4. อยากทราบว่าคะแนน Perceptions of corruption มีผลต่อความสุขของคนในประเทศขนาดไหน?
 ```{R}
-
+PoC <- happiness %>% dplyr::select(`Perceptions of corruption`, Score, `Overall rank`) %>% arrange(desc(`Perceptions of corruption`))
+View(PoC)
 ```
 5. อยากทราบว่ารายได้มีผลต่อความสุขจริงหรือไม่?
 ```{R}
-
+gdp <- happiness %>% dplyr::select(`GDP per capita`, Score, `Overall rank`) %>% arrange(desc(`GDP per capita`))
+View(gdp)
 ```
 
 ### Tools
@@ -104,7 +116,7 @@ happiness %>% count(is.na(happiness$Generosity))
 
 ### References
 
-// Link
+https://github.com/safesit23/INT214-Statistics/blob/main/workshop/Summary.md
 
 ## About Us
 
