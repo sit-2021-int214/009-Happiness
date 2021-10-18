@@ -21,11 +21,11 @@ Original Datasets from: [Happiness.csv](https://www.kaggle.com/unsdsn/world-happ
 5. Exploratory Data Analysis
 
 ### Define a question
-1.
-2.
-3.
-4.
-5.
+1. 
+2. 
+3. 
+4. 
+5. 
 
 ### Library
 ```{R}
@@ -47,27 +47,40 @@ glimpse(happiness)
 
 ### Data Cleaning
 ```{R}
+glimpse(happiness)
 
+happiness %>% filter(duplicated(happiness)) 
+happiness %>% count(duplicated(happiness))
+
+happiness %>% count(is.na(happiness$`Overall rank`))
+happiness %>% count(is.na(happiness$`Country or region`))
+happiness %>% count(is.na(happiness$Score))
+happiness %>% count(is.na(happiness$`GDP per capita`))
+happiness %>% count(is.na(happiness$`Social support`))
+happiness %>% count(is.na(happiness$`Healthy life expectancy`))
+happiness %>% count(is.na(happiness$`Freedom to make life choices`))
+happiness %>% count(is.na(happiness$Generosity))
+happiness %>% count(is.na(happiness$Generosity))
 ```
 
 ### Exploratory Data Analysis
-1.
+1. อยากทราบว่าประเทศไหนได้คะแนนสูงสุดในแต่ละด้านของข้อมูล และได้เท่าไหร่?
 ```{R}
 
 ```
-2.
+2. อยากทราบว่ามีกี่ประเทศที่มีคะแนนรวมสูงกว่าค่าเฉลี่ย?
 ```{R}
 
 ```
-3.
+3. อยากทราบว่าประเทศที่มีความสุขมากที่สุดและประเทศที่มีความสุขน้อยที่สุด มีปัจจัยที่แตกต่างกันอย่างไร?
 ```{R}
 
 ```
-4.
+4. อยากทราบว่าคะแนน Perceptions of corruption มีผลต่อความสุขของคนในประเทศขนาดไหน?
 ```{R}
 
 ```
-5.
+5. อยากทราบว่ารายได้มีผลต่อความสุขจริงหรือไม่?
 ```{R}
 
 ```
@@ -97,7 +110,7 @@ glimpse(happiness)
 
 งานนี้เป็นส่วนของวิชา INT214 Statistics for Information technology <br/> ภาคเรียนที่ 1 ปีการศึกษา 2564 คณะเทคโนโลยีสารสนเทศ มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี
 
-### Team: อยากกรีดร้องงงง
+### Team: อยากกรีดร้องงงง!!!!
 
 1. StudentID: 63130500023 ชิษณุชา สมบูรณ์วรรณะ
 2. StudentID: 63130500049 ธนพัฒน์ ไตรรัตน์พนาสันต์
