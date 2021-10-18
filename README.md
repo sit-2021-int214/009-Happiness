@@ -6,7 +6,7 @@ Original Datasets from: [Happiness.csv](https://www.kaggle.com/unsdsn/world-happ
 
 ## Overview
 1. อยากทราบปัจจัยที่ส่งผลต่อความสุขของคนในประเทศ
-2. อยากทราบประเทศที่มีความสุขมากที่สุด
+2.. อยากทราบประเทศที่มีความสุขมากที่สุด
 
 ### Steps
 
