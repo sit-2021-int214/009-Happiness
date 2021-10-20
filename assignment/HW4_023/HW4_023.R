@@ -9,10 +9,12 @@ View(superstore)
 
 #PartA
 
-#defind  6 question 
+#Defind  6 question 
 
 #1 Want to know if there are the most shipments between the Home office and Corporate?
 exam1 <- superstore %>% filter(Segment == 'Home Office' | Segment == 'Corporate' ) %>% count(Segment)
 View(exam1)
 
-
+#2 want to know product that most popular and show every columns
+exam2 <- superstore %>% filter(Product.Name == max(Product.Name)) 
+View(exam2)
