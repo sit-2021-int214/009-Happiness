@@ -23,11 +23,14 @@ exam1 <- superstore %>% filter(Segment == 'Home Office' | Segment == 'Corporate'
 exam2 <- superstore %>% filter(Product.Name == max(Product.Name)) 
 ```
 * สรุปได้ว่าสินค้าที่ได้รับความนิยมคือ Zipper Ring Binder Pockets
-3.
+3. อยากรู้ว่าจากข้อมูลลูกค้าเลือกการส่งในรุปแบบคลาสไหนมากที่สุด และ มีผลต่อราคาของสินค้าไหม
 ```
+exam3 <-superstore %>% select(Ship.Mode , Sales) %>% arrange(desc(Sales))
 ```
-4.
+* สรุปได้ว่าราคาของสินค้าไม่มีผลต่อการอัพเกรดคลาสในการส่ง
+4. อยากรู้ว่าในปี 2018 และ 2015 ปีไหนมียอดส่งมากที่สุด
 ```
+
 ```
 5.
 ```

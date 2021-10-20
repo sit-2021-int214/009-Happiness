@@ -15,6 +15,10 @@ View(superstore)
 exam1 <- superstore %>% filter(Segment == 'Home Office' | Segment == 'Corporate' ) %>% count(Segment)
 View(exam1)
 
-#2 want to know product that most popular and show every columns
+#2 want to know product that most popular and show every columns ?
 exam2 <- superstore %>% filter(Product.Name == max(Product.Name)) 
 View(exam2)
+
+#3 Want to know which class of submissions you choose the most and how it affects the price of the product?
+exam3 <-superstore %>% select(Ship.Mode , Sales) %>% arrange(desc(Sales))
+View(exam3)
