@@ -2,6 +2,29 @@
 
 ### 👻 Superstore Sales Dataset : [file CSV](https://raw.githubusercontent.com/safesit23/INT214-Statistics/main/datasets/superstore_sales.csv) 👻
 
+## 😎 data in dataset 😎
+```
+$ Row.ID        <int> 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44,~
+$ Order.ID      <chr> "CA-2017-152156", "CA-2017-152156", "CA-2017-138688", "US-2016-108966", "US-2016-108966", "CA-2015-115812", "CA-2015-115812", "CA-2015-115812", "CA-2015-115812", "CA-~
+$ Order.Date    <chr> "08/11/2017", "08/11/2017", "12/06/2017", "11/10/2016", "11/10/2016", "09/06/2015", "09/06/2015", "09/06/2015", "09/06/2015", "09/06/2015", "09/06/2015", "09/06/2015"~
+$ Ship.Date     <chr> "11/11/2017", "11/11/2017", "16/06/2017", "18/10/2016", "18/10/2016", "14/06/2015", "14/06/2015", "14/06/2015", "14/06/2015", "14/06/2015", "14/06/2015", "14/06/2015"~
+$ Ship.Mode     <chr> "Second Class", "Second Class", "Second Class", "Standard Class", "Standard Class", "Standard Class", "Standard Class", "Standard Class", "Standard Class", "Standard ~
+$ Customer.ID   <chr> "CG-12520", "CG-12520", "DV-13045", "SO-20335", "SO-20335", "BH-11710", "BH-11710", "BH-11710", "BH-11710", "BH-11710", "BH-11710", "BH-11710", "AA-10480", "IM-15070"~
+$ Customer.Name <chr> "Claire Gute", "Claire Gute", "Darrin Van Huff", "Sean O'Donnell", "Sean O'Donnell", "Brosina Hoffman", "Brosina Hoffman", "Brosina Hoffman", "Brosina Hoffman", "Bros~
+$ Segment       <chr> "Consumer", "Consumer", "Corporate", "Consumer", "Consumer", "Consumer", "Consumer", "Consumer", "Consumer", "Consumer", "Consumer", "Consumer", "Consumer", "Consumer~
+$ Country       <chr> "United States", "United States", "United States", "United States", "United States", "United States", "United States", "United States", "United States", "United State~
+$ City          <chr> "Henderson", "Henderson", "Los Angeles", "Fort Lauderdale", "Fort Lauderdale", "Los Angeles", "Los Angeles", "Los Angeles", "Los Angeles", "Los Angeles", "Los Angeles~
+$ State         <chr> "Kentucky", "Kentucky", "California", "Florida", "Florida", "California", "California", "California", "California", "California", "California", "California", "North C~
+$ Postal.Code   <int> 42420, 42420, 90036, 33311, 33311, 90032, 90032, 90032, 90032, 90032, 90032, 90032, 28027, 98103, 76106, 76106, 53711, 84084, 94109, 94109, 94109, 68025, 68025, 19140~
+$ Region        <chr> "South", "South", "West", "South", "South", "West", "West", "West", "West", "West", "West", "West", "South", "West", "Central", "Central", "Central", "West", "West", ~
+$ Product.ID    <chr> "FUR-BO-10001798", "FUR-CH-10000454", "OFF-LA-10000240", "FUR-TA-10000577", "OFF-ST-10000760", "FUR-FU-10001487", "OFF-AR-10002833", "TEC-PH-10002275", "OFF-BI-100039~
+$ Category      <chr> "Furniture", "Furniture", "Office Supplies", "Furniture", "Office Supplies", "Furniture", "Office Supplies", "Technology", "Office Supplies", "Office Supplies", "Furn~
+$ Sub.Category  <chr> "Bookcases", "Chairs", "Labels", "Tables", "Storage", "Furnishings", "Art", "Phones", "Binders", "Appliances", "Tables", "Phones", "Paper", "Binders", "Appliances", "~
+$ Product.Name  <chr> "Bush Somerset Collection Bookcase", "Hon Deluxe Fabric Upholstered Stacking Chairs, Rounded Back", "Self-Adhesive Address Labels for Typewriters by Universal", "Bret~
+$ Sales         <dbl> 261.9600, 731.9400, 14.6200, 957.5775, 22.3680, 48.8600, 7.2800, 907.1520, 18.5040, 114.9000, 1706.1840, 911.4240, 15.5520, 407.9760, 68.8100, 2.5440, 665.8800, 55.50~
+```
+
+
 ## 🐻‍❄️ Library 🐻‍❄️ 
 ```
 library(dplyr) 
