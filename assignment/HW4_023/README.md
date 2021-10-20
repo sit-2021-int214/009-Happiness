@@ -1,3 +1,3 @@
 # HW4 63130500023
 
-## dataset => Superstore Sales Dataset  [Using CSV] ("https://raw.githubusercontent.com/safesit23/INT214-Statistics/main/datasets/prog_book.csv")
+## dataset from => [Superstore Sales Dataset csv]  ((https://raw.githubusercontent.com/safesit23/INT214-Statistics/main/datasets/superstore_sales.csv))
