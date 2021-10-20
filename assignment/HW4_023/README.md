@@ -1,8 +1,8 @@
-# Assignment 4 : Data Visualization
+# 😁 Assignment 4 : Data Visualization 😁
 
-Superstore Sales Dataset : [file CSV](https://raw.githubusercontent.com/safesit23/INT214-Statistics/main/datasets/superstore_sales.csv)
+👻 Superstore Sales Dataset : [file CSV](https://raw.githubusercontent.com/safesit23/INT214-Statistics/main/datasets/superstore_sales.csv) 👻
 
-## Library 
+## 🐻‍❄️ Library 🐻‍❄️ 
 ```
 dplyr 
 ```
@@ -12,7 +12,7 @@ ggplot2
 
 # PartA
 
-## Defind  insight the data at least 6 
+## Defind  insight the data at least 6.
 1.
 ```
 ```
