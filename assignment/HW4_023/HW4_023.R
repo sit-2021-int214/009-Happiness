@@ -28,4 +28,11 @@ exam4 <- superstore %>% filter( 2018 == format(as.Date(Ship.Date , format = "%d/
 exam4.1 <- superstore %>% filter( 2015 == format(as.Date(Ship.Date , format = "%d/%m/%Y"),"%Y")) %>% count()
 View(exam4)  
 View(exam4.1)
-                                
+
+#5 Want to know what the most ordered customers are?
+exam5 <- superstore %>%  filter(Customer.Name == max(Customer.Name)) 
+View(exam5)
+
+#6 Want to know which product type is the most and least?
+exam6 <- superstore %>% filter(Category == max(superstore$Category) | Category == min(superstore$Category)) %>% select(Category) %>% table()
+View(exam6)
