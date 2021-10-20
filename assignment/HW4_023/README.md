@@ -15,8 +15,9 @@ ggplot2
 ## Defind  insight the data at least 6.
 1. อยากรู้ว่าเมืองที่มีการจัดส่งพัสดุมากที่สุดระหว่าง Home office กับ  Corporate
 ```
-
+exam1 <- superstore %>% filter(Segment == 'Home Office' | Segment == 'Corporate' ) %>% count(Segment)
 ```
+สรุปได้ว่า Corporate มากกว่า Home office
 2.
 ```
 ```
