@@ -17,7 +17,7 @@ ggplot2
 ```
 exam1 <- superstore %>% filter(Segment == 'Home Office' | Segment == 'Corporate' ) %>% count(Segment)
 ```
-สรุปได้ว่า Corporate มากกว่า Home office <br>
+### สรุปได้ว่า Corporate มากกว่า Home office
 2.
 ```
 ```
