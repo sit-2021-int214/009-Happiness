@@ -30,8 +30,10 @@ exam3 <-superstore %>% select(Ship.Mode , Sales) %>% arrange(desc(Sales))
 * สรุปได้ว่าราคาของสินค้าไม่มีผลต่อการอัพเกรดคลาสในการส่ง
 4. อยากรู้ว่าในปี 2018 และ 2015 ปีไหนมียอดส่งมากที่สุด
 ```
-
+exam4 <- superstore %>% filter( 2018 == format(as.Date(Ship.Date , format = "%d/%m/%Y"),"%Y")) %>% count()
+exam4.1 <- superstore %>% filter( 2015 == format(as.Date(Ship.Date , format = "%d/%m/%Y"),"%Y")) %>% count()
 ```
+* สรุปว่า ปี 2018 มียอดส่งมากกว่า 2015
 5.
 ```
 ```

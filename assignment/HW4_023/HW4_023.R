@@ -22,3 +22,10 @@ View(exam2)
 #3 Want to know which class of submissions you choose the most and how it affects the price of the product?
 exam3 <-superstore %>% select(Ship.Mode , Sales) %>% arrange(desc(Sales))
 View(exam3)
+
+#4 Want to know which year is the most shipment in 2018 and 2015?
+exam4 <- superstore %>% filter( 2018 == format(as.Date(Ship.Date , format = "%d/%m/%Y"),"%Y")) %>% count()
+exam4.1 <- superstore %>% filter( 2015 == format(as.Date(Ship.Date , format = "%d/%m/%Y"),"%Y")) %>% count()
+View(exam4)  
+View(exam4.1)
+                                
