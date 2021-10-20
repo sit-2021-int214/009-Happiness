@@ -4,6 +4,8 @@ Superstore Sales Dataset : [file CSV](https://raw.githubusercontent.com/safesit2
 
 ## Library 
 ```
-dplyr <br>
+dplyr 
+```
+```
 ggplot2
 ```
