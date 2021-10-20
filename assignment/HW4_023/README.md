@@ -13,8 +13,9 @@ ggplot2
 # PartA
 
 ## Defind  insight the data at least 6.
-1.
+1. อยากรู้ว่าเมืองที่มีการจัดส่งพัสดุมากที่สุดระหว่าง Home office กับ  Corporate
 ```
+
 ```
 2.
 ```
