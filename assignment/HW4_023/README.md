@@ -17,12 +17,12 @@ library(ggplot2)
 ```
 exam1 <- superstore %>% filter(Segment == 'Home Office' | Segment == 'Corporate' ) %>% count(Segment)
 ```
-** สรุปได้ว่า Corporate มากกว่า Home office 
+* สรุปได้ว่า Corporate มากกว่า Home office 
 2. อยากรู้ว่าสินค้าไหนได้รับความนิยมสูงสุด
 ```
 exam2 <- superstore %>% filter(Product.Name == max(Product.Name)) 
 ```
-** สรุปได้ว่าสินค้าที่ได้รับความนิยมคือ Zipper Ring Binder Pockets
+* สรุปได้ว่าสินค้าที่ได้รับความนิยมคือ Zipper Ring Binder Pockets
 3.
 ```
 ```
