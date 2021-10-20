@@ -9,3 +9,26 @@ dplyr
 ```
 ggplot2
 ```
+
+# PartA
+
+## Defind  insight the data at least 6 
+1.
+```
+```
+2.
+```
+```
+3.
+```
+```
+4.
+```
+```
+5.
+```
+```
+6.
+```
+```
+
