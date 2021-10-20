@@ -4,10 +4,10 @@
 
 ## 🐻‍❄️ Library 🐻‍❄️ 
 ```
-dplyr 
+library(dplyr) 
 ```
 ```
-ggplot2
+library(ggplot2)
 ```
 
 # PartA
@@ -17,8 +17,8 @@ ggplot2
 ```
 exam1 <- superstore %>% filter(Segment == 'Home Office' | Segment == 'Corporate' ) %>% count(Segment)
 ```
-* สรุปได้ว่า Corporate มากกว่า Home office </br>
-2.
+* สรุปได้ว่า Corporate มากกว่า Home office 
+2. 
 ```
 ```
 3.
