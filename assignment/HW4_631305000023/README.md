@@ -97,7 +97,7 @@ superstore %>% select(State) %>% table() %>%
 barplot(main = "state grahp has the highest delivery volume" ,xlab = "name state" , ylab = "count")
 ```
 Result: <br>
-<img src "https://scontent.fbkk17-1.fna.fbcdn.net/v/t1.6435-9/246278884_110150408121145_6667351284347290079_n.jpg?_nc_cat=110&_nc_rgb565=1&ccb=1-5&_nc_sid=730e14&_nc_ohc=I2ZCB3pCu5QAX-GdbBe&tn=_5O1BZeDu-wQ_iVG&_nc_ht=scontent.fbkk17-1.fna&oh=355209e34db794fd35be3f590e68099e&oe=61972844">
+<img src = "https://scontent.fbkk17-1.fna.fbcdn.net/v/t1.6435-9/246278884_110150408121145_6667351284347290079_n.jpg?_nc_cat=110&_nc_rgb565=1&ccb=1-5&_nc_sid=730e14&_nc_ohc=I2ZCB3pCu5QAX-GdbBe&tn=_5O1BZeDu-wQ_iVG&_nc_ht=scontent.fbkk17-1.fna&oh=355209e34db794fd35be3f590e68099e&oe=61972844">
 
 *  จากกราฟทำให้รู้ว่า รัฐ California 
 
