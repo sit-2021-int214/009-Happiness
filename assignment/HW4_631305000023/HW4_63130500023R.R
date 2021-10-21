@@ -44,10 +44,10 @@ View(exam6)
 
 # Want to know what kind of grahp Highest price ?
 
-  
 superstore %>% ggplot(aes(x=Category,y=Sales))+geom_point() + ggtitle("sales in each  category")
 
-#  
+# Want to know which state grahp has the highest delivery volume?
+superstore %>% select(State) %>% table() %>% 
+  barplot(main = "state grahp has the highest delivery volume" ,xlab = "name state" , ylab = "count")
 
-
-  
+superstore %>% filter(State == max(State)) 
