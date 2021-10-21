@@ -84,6 +84,7 @@ exam6 <- superstore %>% filter(Category == max(superstore$Category) | Category =
 ```
 superstore %>% ggplot(aes(x=Category,y=Sales))+geom_point() + ggtitle("sales in each  category")
 ```
+[img] (https://github.com/sit-2021-int214/009-Happiness/blob/main/assignment/HW4_631305000023/imageGrahp/img_grahp1)
 2.
 ```
 
