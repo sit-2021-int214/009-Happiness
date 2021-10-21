@@ -85,7 +85,7 @@ exam6 <- superstore %>% filter(Category == max(superstore$Category) | Category =
 superstore %>% ggplot(aes(x=Category,y=Sales))+geom_point() + ggtitle("sales in each  category")
 ```
 Result:
-<img src = "https://scontent.fbkk17-1.fna.fbcdn.net/v/t1.6435-9/246877385_110119461457573_5666829593946291777_n.jpg?_nc_cat=107&_nc_rgb565=1&ccb=1-5&_nc_sid=730e14&_nc_ohc=I_Iu8mKlH-IAX9yGG-H&_nc_ht=scontent.fbkk17-1.fna&oh=35821189075916d1f7ebbcfc4438136f&oe=61986AE7" height = "500">
+<img src = "https://scontent.fbkk17-1.fna.fbcdn.net/v/t1.6435-9/246877385_110119461457573_5666829593946291777_n.jpg?_nc_cat=107&_nc_rgb565=1&ccb=1-5&_nc_sid=730e14&_nc_ohc=I_Iu8mKlH-IAX9yGG-H&_nc_ht=scontent.fbkk17-1.fna&oh=35821189075916d1f7ebbcfc4438136f&oe=61986AE7" height = "300">
 2.
 ```
 
