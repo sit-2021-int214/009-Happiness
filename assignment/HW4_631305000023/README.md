@@ -86,7 +86,7 @@ superstore %>% ggplot(aes(x=Category,y=Sales))+geom_point() + ggtitle("sales in 
 ```
 Result:
 
-![image](https://user-images.githubusercontent.com/72918129/137835081-f2aebdc5-f203-47c5-b310-b9b34c536d04.png)
+![image] (https://drive.google.com/file/d/1GnwRTVbZ9IRHbjjdV5DExse22qGdvTrY/view?usp=sharing)
 2.
 ```
 
