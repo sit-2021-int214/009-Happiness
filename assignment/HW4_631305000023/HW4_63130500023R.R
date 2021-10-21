@@ -1,8 +1,10 @@
 #install package
 install.packages("dplyr")
 install.packages("ggplot2")
+install.packages("assertive")
 library(dplyr)
 library(ggplot2)
+library(assertive)
 #read data set
 superstore  <- read.csv("https://raw.githubusercontent.com/safesit23/INT214-Statistics/main/datasets/superstore_sales.csv")
 View(superstore)
@@ -29,6 +31,7 @@ exam4.1 <- superstore %>% filter( 2015 == format(as.Date(Ship.Date , format = "%
 View(exam4)  
 View(exam4.1)
 
+
 #5 Want to know what the most ordered customers are?
 exam5 <- superstore %>%  filter(Customer.Name == max(Customer.Name)) 
 View(exam5)
@@ -36,3 +39,15 @@ View(exam5)
 #6 Want to know which product type is the most and least?
 exam6 <- superstore %>% filter(Category == max(superstore$Category) | Category == min(superstore$Category)) %>% select(Category) %>% table()
 View(exam6)
+
+# PARTA Graph2
+
+# Want to know what kind of grahp Highest price ?
+
+  
+superstore %>% ggplot(aes(x=Category,y=Sales))+geom_point() + ggtitle("sales in each  category")
+
+#  
+
+
+  

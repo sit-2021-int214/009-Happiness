@@ -29,10 +29,19 @@ $ Sales         <dbl> 261.9600, 731.9400, 14.6200, 957.5775, 22.3680, 48.8600, 7
 ```
 library(dplyr) 
 ```
+* เป็น library ในการใช้ตัวช่วย %>% สามารถใช้ได้หลายคำสั่งต่อ ๆ กันได้ไม่ต้องเขียนบรรทัดใหม่
 ```
 library(ggplot2)
 ```
-
+* เป็น library ในการสร้างกราฟ 
+```
+library(assertive)
+```
+* เป็น library ในการตรวจสอบประเภท
+```
+library(tidyverse)
+```
+* เป็น library ในการเรียกใช้ ggplot
 # 🐜 PartA 🐜
 
 ## 🐅 Defind  insight the data at least 6. 🐅
@@ -67,4 +76,16 @@ exam5 <- superstore %>%  filter(Customer.Name == max(Customer.Name))
 exam6 <- superstore %>% filter(Category == max(superstore$Category) | Category == min(superstore$Category)) %>% select(Category) %>% table()
 ```
 * สรุปได้ว่าประเภทที่มากที่สุดคือ Furniture และน้อยที่สุดคือ Technology
+
+## 🙉 PARTA Graphs 🙉
+
+1. อยากรู้ grahp ประเภทไหน มีราคาสูงสุด
+
+```
+superstore %>% ggplot(aes(x=Category,y=Sales))+geom_point() + ggtitle("sales in each  category")
+```
+2.
+```
+
+```
 
