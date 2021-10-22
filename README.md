@@ -91,6 +91,8 @@ happiness %>% dplyr::select(Country, TrustGov) %>% filter(TrustGov == max(TrustG
 - ประเทศที่มีค่า Generosity สูงที่สุด คือ ประเทศ Myanmar โดยมีคะแนน 0.566
 - ประเทศที่มีค่า Trust government สูงที่สุด คือ ประเทศ Singapore โดยมีคะแนน 0.453
 
+
+
 2. อยากทราบว่ามีกี่ประเทศที่มีคะแนนรวมสูงกว่าค่าเฉลี่ย ประเทศอะไรบ้าง?
 ```{R}
 num <- happiness %>% count(Score > mean(Score))
@@ -99,28 +101,34 @@ View(num)
 list <- happiness %>% filter(Score > mean(Score))
 View(list)
 ```
-ประเทศที่มีคะแนนรวมสูงกว่าค่าเฉลี่ย มีทั้งหมด 77 ประเทศ ได้แก่ Finland, Denmark, Norway, Iceland, Netherlands, Switzerland, Sweden, New Zealand, Canada, Austria, Australia, Costa Rica, Israel, Luxembourg, United Kingdom, Ireland, Germany, Belgium, United States, Czech Republic, United Arab Emirates, Malta, Mexico, France, Taiwan, Chile, Guatemala, Saudi Arabia, Qatar, Spain, Panama, Brazil, Uruguay, Singapore, El Salvador, Italy, Bahrain, Slovakia, Trinidad & Tobago, Poland, Uzbekistan, Lithuania, Colombia, Slovenia, Nicaragua, Kosovo, Argentina, Romania, Cyprus, Ecuador, Kuwait, Thailand, Latvia, South Korea, Estonia, Jamaica, Mauritius, Japan, Honduras, Kazakhstan, Bolivia, Hungary, Paraguay
+- ประเทศที่มีคะแนนรวมสูงกว่าค่าเฉลี่ย มีทั้งหมด 77 ประเทศ ได้แก่ Finland, Denmark, Norway, Iceland, Netherlands, Switzerland, Sweden, New Zealand, Canada, Austria, Australia, Costa Rica, Israel, Luxembourg, United Kingdom, Ireland, Germany, Belgium, United States, Czech Republic, United Arab Emirates, Malta, Mexico, France, Taiwan, Chile, Guatemala, Saudi Arabia, Qatar, Spain, Panama, Brazil, Uruguay, Singapore, El Salvador, Italy, Bahrain, Slovakia, Trinidad & Tobago, Poland, Uzbekistan, Lithuania, Colombia, Slovenia, Nicaragua, Kosovo, Argentina, Romania, Cyprus, Ecuador, Kuwait, Thailand, Latvia, South Korea, Estonia, Jamaica, Mauritius, Japan, Honduras, Kazakhstan, Bolivia, Hungary, Paraguay
+
+
 
 3. อยากทราบว่าประเทศที่มีความสุขมากที่สุดและประเทศที่มีความสุขน้อยที่สุด มีปัจจัยที่แตกต่างกันอย่างไร?
 ```{R}
 minVSmax <- happiness %>% filter(Score == max(happiness$Score) | Score == min(happiness$Score))
 View(minVSmax)
 ```
-ประเทศที่มีความสุขมากที่สุด คือ ประเทศ Finland และประเทศที่มีความสุขน้อยที่สุด คือ ประเทศ South Sudan โดยประเทศ Finland มีค่า GDP, Social support, Healthy, Freedom และ Trust government มากกว่าประเทศ South Sudan ในขณะที่ประเทศ South Sudan มีค่า Generosity ที่มากกว่าประเทศ Finland เพียงอย่างเดียว
+- ประเทศที่มีความสุขมากที่สุด คือ ประเทศ Finland และประเทศที่มีความสุขน้อยที่สุด คือ ประเทศ South Sudan โดยประเทศ Finland มีค่า GDP, Social support, Healthy, Freedom และ Trust government มากกว่าประเทศ South Sudan ในขณะที่ประเทศ South Sudan มีค่า Generosity ที่มากกว่าประเทศ Finland เพียงอย่างเดียว
+
+
 
 4. อยากทราบว่าคะแนน Perceptions of corruption มีผลต่อความสุขของคนในประเทศขนาดไหน?
 ```{R}
 PoC <- happiness %>% dplyr::select(`Perceptions of corruption`, Score, `Overall rank`) %>% arrange(desc(`Perceptions of corruption`))
 View(PoC)
 ```
-ประเทศที่รัฐบาลมีความน่าเชื่อถือมาก จะทำให้คนในประเทศมีความสุขมาก เนื่องจากมีความโปร่งใสและได้รับการไว้วางใจ สังเกตได้จากตารางแสดงผลที่แสดงให้เห็นว่าคะแนนของ Trust government จะมีค่ามากในประเทศที่มีความสุขมากเป็นอันดับต้น ๆ ในอีกทางหนึ่ง หากคะแนนของ Trust government มีค่าน้อย จะทำให้คนในประเทศนั้น ๆ มีความสุขน้อยตามลงไปด้วย
+- ประเทศที่รัฐบาลมีความน่าเชื่อถือมาก จะทำให้คนในประเทศมีความสุขมาก เนื่องจากมีความโปร่งใสและได้รับการไว้วางใจ สังเกตได้จากตารางแสดงผลที่แสดงให้เห็นว่าคะแนนของ Trust government จะมีค่ามากในประเทศที่มีความสุขมากเป็นอันดับต้น ๆ ในอีกทางหนึ่ง หากคะแนนของ Trust government มีค่าน้อย จะทำให้คนในประเทศนั้น ๆ มีความสุขน้อยตามลงไปด้วย
+
+
 
 5. อยากทราบว่ารายได้มีผลต่อความสุขจริงหรือไม่?
 ```{R}
 gdp <- happiness %>% dplyr::select(`GDP per capita`, Score, `Overall rank`) %>% arrange(desc(`GDP per capita`))
 View(gdp)
 ```
-รายได้ หรือ GDP มีผลต่อความสุขของคนในประเทศ โดยถ้ามีรายได้มาก คนในประเทศนั้น ๆ จะมีความสุขมาก แต่ถ้ามีรายได้น้อย คนในประเทศก็จะมีความสุขน้อยตามลงไปด้วย 
+- รายได้ หรือ GDP มีผลต่อความสุขของคนในประเทศ โดยถ้ามีรายได้มาก คนในประเทศนั้น ๆ จะมีความสุขมาก แต่ถ้ามีรายได้น้อย คนในประเทศก็จะมีความสุขน้อยตามลงไปด้วย 
 
 
 ### Tools
