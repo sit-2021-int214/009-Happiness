@@ -46,5 +46,4 @@ ComSci %>% ggplot(aes(x=Number_Of_Pages,y=Price))+geom_point(aes(color=ComSci$Pr
 ## 4.2 plot graph histogram show Price
 ComSci %>% ggplot(aes(x=Price))+geom_histogram(binwidth = 15)+ggtitle("Price")+xlab("Price")+ylab("Count")
 
-write.csv(ComSci,"HW04_Com_Science.csv")
-write.csv()
+# write.csv(ComSci,"HW04_Com_Science.csv")
