@@ -35,8 +35,8 @@ ComSci$Rating %>% mean(.,na.rm=T)
 ComSci %>% filter(Number_Of_Pages > 900) %>% select(Type,Number_Of_Pages)
 ### 3.4 find quantile2 of Rating this dataset
 ComSci$Rating %>% quantile(0.5,na.rm = T)
-### 3.5 Show title , rating and price of this dataset that have rating more than 5
-ComSci %>% filter(Rating > 5) %>% select(Book_title,Rating ,Price)
+### 3.5 Show title , rating and price of this dataset that have rating more than 4
+ComSci %>% filter(Rating > 4) %>% select(Book_title,Rating ,Price)
 ### 3.6 Show the price that more than 45 and ordering by desc
 ComSci %>% filter(Price > 150) %>% select(Price) %>% arrange(desc(Price))
 
@@ -46,5 +46,4 @@ ComSci %>% ggplot(aes(x=Number_Of_Pages,y=Price))+geom_point(aes(color=ComSci$Pr
 ## 4.2 plot graph histogram show Price
 ComSci %>% ggplot(aes(x=Price))+geom_histogram(binwidth = 15)+ggtitle("Price")+xlab("Price")+ylab("Count")
 
-write.csv(ComSci,"HW04_Com_Science.csv")
-write.csv()
+#write.csv(ComSci,"HW04_Com_Science.csv")
