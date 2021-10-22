@@ -92,7 +92,8 @@ happiness %>% dplyr::select(Country, TrustGov) %>% filter(TrustGov == max(TrustG
 ```
 
 2. อยากทราบว่ามีกี่ประเทศที่มีคะแนนรวมสูงกว่าค่าเฉลี่ย ประเทศอะไรบ้าง?
-- ประเทศที่มีคะแนนรวมสูงกว่าค่าเฉลี่ย มีทั้งหมด 77 ประเทศ ได้แก่ Finland, Denmark, Norway, Iceland, Netherlands, Switzerland, Sweden, New Zealand, Canada, Austria, Australia, Costa Rica, Israel, Luxembourg, United Kingdom, Ireland, Germany, Belgium, United States, Czech Republic, United Arab Emirates, Malta, Mexico, France, Taiwan, Chile, Guatemala, Saudi Arabia, Qatar, Spain, Panama, Brazil, Uruguay, Singapore, El Salvador, Italy, Bahrain, Slovakia, Trinidad & Tobago, Poland, Uzbekistan, Lithuania, Colombia, Slovenia, Nicaragua, Kosovo, Argentina, Romania, Cyprus, Ecuador, Kuwait, Thailand, Latvia, South Korea, Estonia, Jamaica, Mauritius, Japan, Honduras, Kazakhstan, Bolivia, Hungary, Paraguay
+- ประเทศที่มีคะแนนรวมสูงกว่าค่าเฉลี่ย มีทั้งหมด 77 ประเทศ ได้แก่ Finland, Denmark, Norway, Iceland, Netherlands, Switzerland, Sweden, New Zealand, Canada, Austria, Australia, Costa Rica, Israel, Luxembourg, United Kingdom, Ireland, Germany, Belgium, United States, Czech Republic, United Arab Emirates, Malta, Mexico, France, Taiwan, Chile, Guatemala, Saudi Arabia, Qatar, Spain, Panama, Brazil, Uruguay, Singapore, El Salvador, Italy, Bahrain, Slovakia, Trinidad & Tobago, Poland, Uzbekistan, Lithuania, Colombia, Slovenia, Nicaragua, Kosovo, Argentina, Romania, Cyprus, Ecuador, Kuwait, Thailand, Latvia, South Korea, Estonia, Jamaica, Mauritius, Japan, Honduras, Kazakhstan, Bolivia, Hungary, Paraguay, Northern Cyprus, Peru, Portugal, Pakistan, Russia, Philippines, Serbia, Moldova, Libya, Montenegro, Tajikistan, Croatia, Hong Kong, Dominican Republic
+
 ```{R}
 num <- happiness %>% count(Score > mean(Score))
 View(num)
