@@ -15,6 +15,7 @@ library("tidyverse")
 
 ### 1.1 see Dataset
 View(ComSci)
+glimpse(ComSci)
 ### 1.2 check datatype
 ComSci$Number_Of_Pages %>% is.numeric()
 ComSci$Book_title %>% is.character()
@@ -27,18 +28,18 @@ ComSci %>% glimpse()
 tibble(x =0:20 , y = -(x^2) , z =x+y)
 
 # 3.Tranform data
-### 3.1 find the min Reviews of this Dateset
-ComSci$Reviews %>% min(.,na.rm = T)
+### 3.1 find the max Reviews of this Dateset
+ComSci$Reviews %>% str_remove(",") %>% as.numeric() %>% max(.,na.rm = T)
 ### 3.2 find average of Rating of this Dataset
 ComSci$Rating %>% mean(.,na.rm=T)
 ### 3.3 check type of the book that has more than 900 pages in this Dataset
 ComSci %>% filter(Number_Of_Pages > 900) %>% select(Type,Number_Of_Pages)
 ### 3.4 find quantile2 of Rating this dataset
 ComSci$Rating %>% quantile(0.5,na.rm = T)
-### 3.5 Show title , rating and price of this dataset that have rating more than 4
-ComSci %>% filter(Rating > 4) %>% select(Book_title,Rating ,Price)
-### 3.6 Show the price that more than 45 and ordering by desc
-ComSci %>% filter(Price > 150) %>% select(Price) %>% arrange(desc(Price))
+### 3.5 Show title , rating and price of this dataset that have rating more than 4.75
+ComSci %>% filter(Rating > 4.75) %>% select(Book_title,Rating ,Price) %>% arrange(Rating)
+### 3.6 Show the price that more than 200 and ordering by desc
+ComSci %>% filter(Price > 200) %>% select(Price) %>% arrange(desc(Price))
 
 # 4.use GGplot2 to plot the graph
 ## 4.1 plot graph show relation between Price and Number of Pages
