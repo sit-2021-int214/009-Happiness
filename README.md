@@ -84,6 +84,13 @@ happiness %>% dplyr::select(Country, Freedom) %>% filter(Freedom == max(Freedom)
 happiness %>% dplyr::select(Country, Generosity) %>% filter(Generosity == max(Generosity))
 happiness %>% dplyr::select(Country, TrustGov) %>% filter(TrustGov == max(TrustGov))
 ```
+ประเทศที่มีค่า GDP สูงที่สุด คือ ประเทศ Qatar โดยมีคะแนน 1.684
+ประเทศที่มีค่า Social support สูงที่สุด คือ ประเทศ Iceland โดยมีคะแนน 1.624
+ประเทศที่มีค่า Healthy สูงที่สุด คือ ประเทศ Singapore โดยมีคะแนน 1.141
+ประเทศที่มีค่า Freedom สูงที่สุด คือ ประเทศ Uzbekistan โดยมีคะแนน 0.631
+ประเทศที่มีค่า Generosity สูงที่สุด คือ ประเทศ Myanmar โดยมีคะแนน 0.566
+และประเทศที่มีค่า Trust government สูงที่สุด คือ ประเทศ Singapore โดยมีคะแนน 0.453
+
 #2. อยากทราบว่ามีกี่ประเทศที่มีคะแนนรวมสูงกว่าค่าเฉลี่ย ประเทศอะไรบ้าง?
 ```{R}
 num <- happiness %>% count(Score > mean(Score))
