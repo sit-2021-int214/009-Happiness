@@ -5,6 +5,11 @@
 ### 👻 Superstore Sales Dataset : [file CSV](https://raw.githubusercontent.com/safesit23/INT214-Statistics/main/datasets/superstore_sales.csv) 👻
 
 ## 😎 data in dataset 😎
+
+* show dataset ใช้คำสั่ง `glimps`
+```
+glimpse()
+```
 ```
 $ Row.ID        <int> 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44,~
 $ Order.ID      <chr> "CA-2017-152156", "CA-2017-152156", "CA-2017-138688", "US-2016-108966", "US-2016-108966", "CA-2015-115812", "CA-2015-115812", "CA-2015-115812", "CA-2015-115812", "CA-~
@@ -99,6 +104,6 @@ barplot(main = "state grahp has the highest delivery volume" ,xlab = "name state
 Result: <br>
 <img src = "https://scontent.fbkk17-1.fna.fbcdn.net/v/t1.6435-9/246278884_110150408121145_6667351284347290079_n.jpg?_nc_cat=110&_nc_rgb565=1&ccb=1-5&_nc_sid=730e14&_nc_ohc=I2ZCB3pCu5QAX-GdbBe&tn=_5O1BZeDu-wQ_iVG&_nc_ht=scontent.fbkk17-1.fna&oh=355209e34db794fd35be3f590e68099e&oe=61972844">
 
-*  จากกราฟทำให้รู้ว่า รัฐ California 
+*  จากกราฟทำให้รู้ว่า รัฐ California มียอดสูงสุด
 ## POWER BI MY DATA SET: [link Here](https://app.powerbi.com/links/2oSIyVyZOz?ctid=6f4432dc-20d2-441d-b1db-ac3380ba633d&pbi_source=linkShare)
 😜😝🤤😒😓😔😕🙃🤑😲☹️🙁😖😞😟😤😢😭😦😨😧😩🤯😬😮‍💨😰😱🥵🥶😳🤪😵😵‍💫🥴😠😡🤬😷🤒🤕🤢🤮🤧😇🥳🥸
