@@ -1,4 +1,4 @@
-# 08 Hypothesis Testing
+# Hypothesis Testing
 
 
 ## Hypothesis testing
@@ -25,6 +25,42 @@ is a method of statistical inference. An alternative hypothesis is proposed for 
    - talpha for T: `talpha <- qt(p, df, lower.tail = TRUE)`
 5. Compare P-value with alpha or z/t with zalpha/talpha
 6. Conclusion
+
+
+### Find Number of Countries (n)
+
+- Finding Number of Countries
+
+```
+#Finding Number of Countries
+
+
+
+```
+
+
+### Find Mean (x̄)
+
+- Finding average score of happiness
+
+```
+#Finding average score of happiness
+
+
+
+```
+### Find Standard Deviation (sd, σ)
+
+- Finding Standard Deviation of happiness
+
+```
+#Finding Standard Deviation of happiness
+
+
+
+
+```
+
 
 ### Example 1 (Ref: Chapter 9 Page 356)
 
