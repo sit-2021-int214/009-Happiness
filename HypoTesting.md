@@ -6,7 +6,7 @@
 is a method of statistical inference. An alternative hypothesis is proposed for the probability distribution of the data, either explicitly or only informally. The comparison of the two models is deemed statistically significant if, according to a threshold probability—the significance level—the data would be unlikely to occur if the null hypothesis were true. [Ref](https://en.wikipedia.org/wiki/Statistical_hypothesis_testing)
 
 ### Step to do:
-🐈🐎🐑🐱🐯🐏🐖🐄🐃🐂
+🐈🐎🐑🐱🐯🐏🐖🐄🐃🐂 <br>
 0. Assign variables:
    - u0 or p0
    - xbar or pbar
