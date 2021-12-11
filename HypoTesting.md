@@ -139,7 +139,8 @@ if(z<=zalpha){
 
 Step 6: Conclusion
 
-//Answer
+The average happiness score from survey in Gallup World Poll is not low enough to reject H0.
+
 
 🐈🐎🐑🐱🐯🐏🐖🐄🐃🐂
 
@@ -254,4 +255,4 @@ if(z<=zalpha){
 
 Step 6: Conclusion
 
-//Answer
+The average score of trust government from Gallup World Poll is low enough to reject H0.
