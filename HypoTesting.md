@@ -68,7 +68,7 @@ sprintf("%.2f",sd)
 
 ### Example 1
 
-The Federal Trade Commission (FTC) periodically conducts statistical studies designed to test the claims that manufacturers make about their products. For example, the label on a large can of Hilltop Coffee states that the can contains 3 pounds of coffee. Thus, the FTC interprets the label information on a large can of coffee as a claim by Hilltop that the population mean filling weight is at least 3 pounds per can. The director of the FTC’s testing program willing to risk a 1% chance of making such an error. Suppose a sample of 36 cans of coffee is selected and the population standard deviation can be assumed known with a value of σ = 0.18. Is x̄ = 2.92 pounds small enough to cause us to reject H0 ?
+The Gallup World Poll has surveyed data about happiness score from a sample of 156 countries. The  happiness mean score should be at least 5 and accept 0.01 for the risk. The average score of happiness from survey in Gallup World Poll is 5.41 and standard deviation is 1.11. Is that score low enough to reject H0?
 
 Step 0: Assign variables
 
@@ -183,7 +183,7 @@ sprintf("%.2f",sd)
 
 ### Example 2
 
-The Gallup World Poll has surveyed data about Trust Government from a sample of 156 countries. The trust government score should be equal or greater than 0.2 and accept 0.05 for the risk. The average score of trust government from Gallup World Poll is 0.11 and standard deviation is 0.09. Is that score low enough to reject H0?
+The Gallup World Poll has surveyed data about Trust Government from a sample of 156 countries. The average trust government score should be equal or greater than 0.2 and accept 0.05 for the risk. The average score of trust government from Gallup World Poll is 0.11 and standard deviation is 0.09. Is that score low enough to reject H0?
 
 Step 0: Assign variables
 
