@@ -183,8 +183,8 @@ sprintf("%.2f",sd)
 
 ### Example 2
 
-Gallup World Poll เก็บข้อมูลสำรวจ Trust Goverment จากตัวอย่างทั้งหมด 156 ประเทศ กำหนดค่ามาตรฐานว่าควรอยู่ที่มากกว่าหรือเท่ากับ 0.2 
-และมีค่าความเสี่ยงอยู่ที่ 0.05 ซึ่งค่าเฉลี่ยจาก Gallup World Poll อยู่ที่ 0.11 โดยมีส่วนเบี่ยงเบนมาตรฐานอยู่ที่ 0.09
+The Gallup World Poll has surveyed data about Trust Government from a sample of 156 countries. The trust government score should be equal or greater than 0.2 and accept 0.05 for the risk. The average score of trust government from Gallup World Poll is 0.11 and standard deviation is 0.09. Is that score low enough to reject H0?
+
 Step 0: Assign variables
 
 ```
