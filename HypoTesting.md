@@ -83,7 +83,7 @@ u0 <- 5
 Step 1: State the hypothesis
 
 ```
-#H0: u>=5   ,Ha: u<5
+#h0: u<=5   ,ha: u>5
 
 ```
 
@@ -101,45 +101,45 @@ z <- (xbar - u0) / (sd/sqrt(n));
 z
 
 ```
-// 4.600491
+// 4.613422
 
 Step 4: Finding P-value approach or Critical Value approach
 
 ```
 # P-value approach
-pvalue <- pnorm(z); 
+pvalue <- pt(z,n-1,lower.tail = FALSE);
 pvalue
 
 # Critical Value approach
-zalpha <- qnorm(alpha);
+zalpha <- qt(alpha,n-1,lower.tail = FALSE);
 zalpha
 
 ```
-// P-value = 0.9999979 ,Critical value = -2.326348
+// P-value = 4.122492e-06 ,Critical value = 2.350646
 
 Step 5: Compare
 
 ```
 # Using p-value approach
-if(pvalue<=alpha){
+if(pvalue<alpha){
   print("Reject H0")
 }else{
   print("No Reject H0")
 }
 
 # Using critical value
-if(z<=zalpha){
+if(z>zalpha){
   print("Reject H0")
 }else{
   print("No Reject H0")
 }
 
 ```
-// P-value = "No Reject H0" ,Critical value = "No Reject H0"
+// P-value = "Reject H0" ,Critical value = "Reject H0"
 
 Step 6: Conclusion
 
-The average happiness score from survey in Gallup World Poll is not low enough to reject H0.
+The average happiness score from survey in Gallup World Poll is low enough to reject H0.
 
 
 🐈🐎🐑🐱🐯🐏🐖🐄🐃🐂
