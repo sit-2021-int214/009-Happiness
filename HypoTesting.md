@@ -97,8 +97,8 @@ alpha <- 0.01
 Step 3: Test statistic
 
 ```
-z <- (xbar - u0) / (sd/sqrt(n));
-z
+t <- (xbar - u0) / (sd/sqrt(n));
+t
 
 ```
 // 4.613422
@@ -107,12 +107,12 @@ Step 4: Finding P-value approach or Critical Value approach
 
 ```
 # P-value approach
-pvalue <- pt(z,n-1,lower.tail = FALSE);
+pvalue <- pt(t,n-1,lower.tail = FALSE);
 pvalue
 
 # Critical Value approach
-zalpha <- qt(alpha,n-1,lower.tail = FALSE);
-zalpha
+talpha <- qt(alpha,n-1,lower.tail = FALSE);
+talpha
 
 ```
 // P-value = 4.122492e-06 ,Critical value = 2.350646
@@ -128,7 +128,7 @@ if(pvalue<alpha){
 }
 
 # Using critical value
-if(z>zalpha){
+if(t>talpha){
   print("Reject H0")
 }else{
   print("No Reject H0")
